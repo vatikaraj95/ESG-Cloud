@@ -1,0 +1,8 @@
+message,issue_category,urgency,recommended_team
+There is a water leak in Building C that has been running all morning.,water_leak,HIGH,Facilities
+The recycling bins are contaminated again and no one seems to be checking them.,waste_contamination,MEDIUM,Waste & Sustainability
+The air conditioning is running overnight in an empty office.,energy_waste,MEDIUM,Energy Management
+I want to report that one of our suppliers may not meet our sustainability policy.,supplier_compliance,MEDIUM,Procurement
+The accessible entrance near the main building has been blocked for two days.,accessibility_barrier,HIGH,Facilities + Diversity & Inclusion
+Someone spilled chemicals near the loading dock and a worker says they feel dizzy.,hazardous_spill,HIGH,Health & Safety
+"Not urgent, but the lights in meeting room 4 keep getting left on after hours.",energy_waste,MEDIUM,Energy Management

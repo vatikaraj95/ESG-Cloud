@@ -1,0 +1,8 @@
+message,rules_urgency,zeroshot_urgency,llm_original_urgency,llm_revised_urgency,llm_original_category,llm_revised_category,revised_human_review
+There is a water leak in Building C that has ...,HIGH,HIGH,HIGH,CRITICAL,Infrastructure,water_leak,True
+The recycling bins are contaminated again and...,MEDIUM,MEDIUM,HIGH,MEDIUM,Operational,waste_contamination,True
+The air conditioning is running overnight in ...,MEDIUM,MEDIUM,HIGH,LOW,Environmental,energy_waste,False
+I want to report that one of our suppliers ma...,MEDIUM,HIGH,HIGH,CRITICAL,ESG - Supplier Compliance,supplier_compliance,True
+The accessible entrance near the main buildin...,HIGH,MEDIUM,HIGH,HIGH,Security,accessibility_barrier,True
+Someone spilled chemicals near the loading do...,HIGH,MEDIUM,HIGH,CRITICAL,Safety,hazardous_spill,True
+"Not urgent, but the lights in meeting room 4 ...",MEDIUM,LOW,LOW,LOW,Operational,energy_waste,True

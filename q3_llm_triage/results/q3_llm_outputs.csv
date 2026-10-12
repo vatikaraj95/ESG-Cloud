@@ -1,0 +1,185 @@
+msg_id,prompt,valid_json,issue_category,urgency,recommended_team,needs_human_review,raw_output
+0,original,True,Infrastructure,HIGH,Facilities Management Team,,"```json
+{
+  ""issue_category"": ""Infrastructure"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities Management Team"",
+  ""escalation_reason"": ""Immediate action required to prevent potential damage."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Water leak detected in Building C for several hours.""
+}
+```"
+0,revised,True,water_leak,CRITICAL,Facilities,True,"```json
+{
+  ""issue_category"": ""water_leak"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities"",
+  ""escalation_reason"": ""Water leakage poses a significant health and safety hazard."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""needs_human_review"": true,
+  ""confidence"": 1,
+  ""brief_summary"": ""Building C water leak continues without resolution.""
+}
+```"
+1,original,True,Operational,HIGH,Operations Team,,"```json
+{
+  ""issue_category"": ""Operational"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Operations Team"",
+  ""escalation_reason"": ""Contamination of recycling bins is causing waste management issues."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Recycling bins are contaminated, indicating lack of monitoring.""
+}
+```"
+1,revised,True,waste_contamination,MEDIUM,Waste & Sustainability,True,"```json
+{
+  ""issue_category"": ""waste_contamination"",
+  ""urgency"": ""MEDIUM"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Waste & Sustainability"",
+  ""escalation_reason"": ""recycling bins are contaminated"",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""needs_human_review"": true,
+  ""confidence"": 0.8,
+  ""brief_summary"": ""Recycling bins contaminated, no checks.""
+}
+```"
+2,original,True,Environmental,HIGH,IT Support Team,,"```json
+{
+  ""issue_category"": ""Environmental"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""IT Support Team"",
+  ""escalation_reason"": ""Immediate action needed to prevent potential health risks."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Air conditioning running overnight in an empty office.""
+}
+```"
+2,revised,True,energy_waste,LOW,Energy Management,False,"```json
+{
+  ""issue_category"": ""energy_waste"",
+  ""urgency"": ""LOW"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""N"",
+  ""recommended_team"": ""Energy Management"",
+  ""escalation_reason"": """",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""needs_human_review"": false,
+  ""confidence"": 0.8,
+  ""brief_summary"": ""Air conditioning running overnight in empty office""
+}
+```"
+3,original,True,ESG - Supplier Compliance,HIGH,Sustainability Team,,"```json
+{
+  ""issue_category"": ""ESG - Supplier Compliance"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Sustainability Team"",
+  ""escalation_reason"": ""Potential non-compliance with sustainability policies"",
+  ""data_sensitivity_risk"": ""MEDIUM"",
+  ""brief_summary"": ""Supplier may not be meeting sustainability policy.""
+}
+```"
+3,revised,True,supplier_compliance,CRITICAL,Procurement & ESG Governance,True,"```json
+{
+  ""issue_category"": ""supplier_compliance"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Procurement & ESG Governance"",
+  ""escalation_reason"": ""a supplier or purchase that may breach sustainability or procurement policy"",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""needs_human_review"": true,
+  ""confidence"": 1,
+  ""brief_summary"": ""Supplier may not meet sustainability policy""
+}
+```"
+4,original,True,Security,HIGH,Facility Management Team,,"```json
+{
+  ""issue_category"": ""Security"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facility Management Team"",
+  ""escalation_reason"": ""Immediate action needed to ensure safety of employees."",
+  ""data_sensitivity_risk"": ""None"",
+  ""brief_summary"": ""Entrance near main building is blocked for two days.""
+}
+```"
+4,revised,True,accessibility_barrier,HIGH,Facilities + Diversity & Inclusion,True,"```json
+{
+  ""issue_category"": ""accessibility_barrier"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities + Diversity & Inclusion"",
+  ""escalation_reason"": ""blocked ramp affecting accessibility"",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""needs_human_review"": true,
+  ""confidence"": 0.9,
+  ""brief_summary"": ""Blocked ramp at main building entrance affects accessibility.""
+}
+```"
+5,original,True,Safety,HIGH,HR & Safety Team,,"```json
+[
+    {
+        ""issue_category"": ""Safety"",
+        ""urgency"": ""HIGH"",
+        ""sentiment"": ""NEGATIVE"",
+        ""followup_required"": ""Y"",
+        ""recommended_team"": ""HR & Safety Team"",
+        ""escalation_reason"": ""Chemical spill and potential health hazard"",
+        ""data_sensitivity_risk"": ""LOW"",
+        ""brief_summary"": ""Worker reports feeling dizzy after chemical spill at loading dock.""
+    }
+]
+```"
+5,revised,True,hazardous_spill,CRITICAL,Health & Safety,True,"```json
+{
+  ""issue_category"": ""hazardous_spill"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Health & Safety"",
+  ""escalation_reason"": ""Chemicals spill near a worker who feels dizzy."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""needs_human_review"": true,
+  ""confidence"": 1,
+  ""brief_summary"": ""Worker feels dizzy after chemical spill near loading dock.""
+}
+```"
+6,original,True,Operational,LOW,IT Support Team,,"```json
+{
+  ""issue_category"": ""Operational"",
+  ""urgency"": ""LOW"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""IT Support Team"",
+  ""escalation_reason"": ""Lighting issues affecting productivity."",
+  ""data_sensitivity_risk"": ""None"",
+  ""brief_summary"": ""Meeting room 4 lighting is frequently left on past hours.""
+}
+```"
+6,revised,True,energy_waste,LOW,Energy Management,True,"```json
+{
+  ""issue_category"": ""energy_waste"",
+  ""urgency"": ""LOW"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Energy Management"",
+  ""escalation_reason"": ""lights left on after hours"",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""needs_human_review"": true,
+  ""confidence"": 0.8,
+  ""brief_summary"": ""Meeting room lights kept on past hours""
+}
+```"
