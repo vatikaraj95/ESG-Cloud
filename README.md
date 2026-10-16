@@ -9,7 +9,7 @@ Author: Vatika
 | [`q3_llm_triage/`](q3_llm_triage/) | LLM triage experiment: Colab code, original and revised prompts, raw CSV outputs, [experiment log](q3_llm_triage/EXPERIMENT_LOG.md) |
 | [`q4_notebooklm/`](q4_notebooklm/) | NotebookLM evaluation: [experiment log](q4_notebooklm/EXPERIMENT_LOG.md), study guide, audio overview and transcript, screenshots |
 
-**Q1 demonstration video:** [Watch the video on Microsoft Stream](https://latrobeuni-my.sharepoint.com/:v:/g/personal/22884063_students_ltu_edu_au/IQBVy0OzSy2iQIGthHeS78-UAc_8YGKst8aOBRFUZiYgqaU?e=8Woqpo)
+**Q1 demonstration video:** [Watch the video on Microsoft Stream](https://latrobeuni-my.sharepoint.com/:v:/g/personal/22884063_students_ltu_edu_au/IQBVy0OzSy2iQIGthHeS78-UAc_8YGKst8aOBRFUZiYgqaU?e=Kh16zs)
 
 ## Reproducing Q3
 
